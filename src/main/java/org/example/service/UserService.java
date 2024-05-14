@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.enumators.UserRole;
 import org.example.exception.DataNotFoundException;
 import org.example.model.User;
 import org.example.repository.UserRepository;
@@ -32,6 +33,17 @@ public class UserService extends BaseService<User, UserRepository>{
                 break;
             }
             i++;
+        }
+        repository.writeData(all);
+    }
+
+    public void updateRole(User updated, UserRole role) {
+        ArrayList<User> all = repository.getAll();
+        for (User user : all) {
+            if (Objects.equals(user.getId(), updated.getId())) {
+                user.setRole(role);
+                break;
+            }
         }
         repository.writeData(all);
     }

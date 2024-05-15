@@ -5,6 +5,8 @@ import org.example.enumators.UserRole;
 import org.example.enumators.UserState;
 import org.telegram.telegrambots.meta.api.objects.Location;
 
+import java.util.UUID;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -19,4 +21,6 @@ public class User extends Base{
     private Long chatId;
     private String phoneNumber;
     private Location locationUser;
+    private UUID updateStadiumId;
+    private UUID updateSlotId;
 }

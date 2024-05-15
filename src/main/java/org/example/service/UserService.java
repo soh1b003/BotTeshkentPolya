@@ -37,14 +37,4 @@ public class UserService extends BaseService<User, UserRepository>{
         repository.writeData(all);
     }
 
-    public void updateRole(User updated, UserRole role) {
-        ArrayList<User> all = repository.getAll();
-        for (User user : all) {
-            if (Objects.equals(user.getId(), updated.getId())) {
-                user.setRole(role);
-                break;
-            }
-        }
-        repository.writeData(all);
-    }
 }

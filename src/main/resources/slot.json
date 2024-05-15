@@ -1,1 +1,19 @@
-[]
+[ {
+  "id" : "907d804b-6952-4c3a-8fe8-1f58952b1dc4",
+  "createdDate" : "15/05/2024 14:50:40",
+  "isActive" : true,
+  "userId" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
+  "stadiumId" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
+  "date" : "15/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "4013e41c-a812-4f47-bf14-942f2d76862c",
+  "createdDate" : "15/05/2024 14:50:48",
+  "isActive" : true,
+  "userId" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
+  "stadiumId" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
+  "date" : "15/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+} ]

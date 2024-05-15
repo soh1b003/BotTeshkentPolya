@@ -1,1 +1,13 @@
-[]
+[ {
+  "id" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
+  "createdDate" : "15/05/2024 14:50:19",
+  "isActive" : true,
+  "userId" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
+  "nameStadium" : "Camp Nou",
+  "stadiumPage" : [ "AgACAgIAAxkBAAICl2ZEhWRj80K_Gqubpk3o1VEVR6aiAAJV3TEbWBQgSk0N8lQT6vZmAQADAgADeQADNQQ", "AgACAgIAAxkBAAICmGZEhWRmjY9t2dDfLoNLWtJSi_baAAJW3TEbWBQgSoARYGz8mh5fAQADAgADeQADNQQ" ],
+  "stadiumLocation" : {
+    "longitude" : 69.228416,
+    "latitude" : 41.326593
+  },
+  "price" : "400000"
+} ]

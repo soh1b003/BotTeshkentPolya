@@ -1,12 +1,11 @@
 package org.example.bot;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.bot.buttons.AdvertiserButtons;
-import org.example.bot.buttons.Buttons;
-import org.example.bot.buttons.DateButtons;
-import org.example.bot.buttons.UserButtons;
+import org.example.bot.buttons.*;
+import org.example.bot.handlers.AdvertiserHandler;
 import org.example.bot.handlers.CommandHandler;
 import org.example.bot.handlers.RegistrationHandler;
+import org.example.bot.handlers.UserHandler;
 import org.example.repository.SlotRepository;
 import org.example.repository.StadiumRepository;
 import org.example.repository.UserRepository;
@@ -30,6 +29,9 @@ public class MyBot extends TelegramLongPollingBot {
     public static Buttons buttons = new Buttons();
     public static CommandHandler commandHandler = new CommandHandler();
     public static DateButtons dateButtons = new DateButtons();
+    public static UserHandler userHandler = new UserHandler();
+    public static AdvertiserHandler advertiserHandler = new AdvertiserHandler();
+    public static TimeButtons timeButtons = new TimeButtons();
     public MyBot(String botToken) {
         super(botToken);
     }

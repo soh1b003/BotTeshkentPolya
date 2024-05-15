@@ -20,10 +20,11 @@ public enum UserState {
     NameStadium,
     StadiumPage,
     LocationStadium,
+    Price,
     LocalDate,
-    From,
-    To,
-    State,
+    FromTo,
+    YesAndNo,
+    PlusTime,
 
 
 

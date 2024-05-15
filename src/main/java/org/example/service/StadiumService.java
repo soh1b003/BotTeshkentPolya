@@ -1,11 +1,11 @@
 package org.example.service;
 
 import org.example.model.Stadium;
-import org.example.model.User;
 import org.example.repository.StadiumRepository;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.UUID;
 
 public class StadiumService extends BaseService<Stadium, StadiumRepository> {
     public StadiumService(StadiumRepository repository) {
@@ -23,5 +23,9 @@ public class StadiumService extends BaseService<Stadium, StadiumRepository> {
             i++;
         }
         repository.writeData(all);
+    }
+
+    public Stadium findByStadiumId(UUID stadiumId){
+        return getAll().stream().filter((stadium) -> Objects.equals(stadium.getId(), stadiumId)).findFirst().get();
     }
 }

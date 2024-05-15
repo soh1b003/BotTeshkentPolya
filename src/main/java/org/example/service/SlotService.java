@@ -6,6 +6,7 @@ import org.example.repository.SlotRepository;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.UUID;
 
 public class SlotService extends BaseService<Slot, SlotRepository> {
     public SlotService(SlotRepository repository) {
@@ -23,5 +24,9 @@ public class SlotService extends BaseService<Slot, SlotRepository> {
             i++;
         }
         repository.writeData(all);
+    }
+
+    public Slot findBySlotId(UUID slotId){
+        return getAll().stream().filter((slot) -> Objects.equals(slot.getId(), slotId)).findFirst().get();
     }
 }

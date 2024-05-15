@@ -1,1 +1,18 @@
-[]
+[ {
+  "id" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
+  "createdDate" : "15/05/2024 14:49:57",
+  "isActive" : true,
+  "firstName" : "soh1b_003",
+  "lastName" : null,
+  "username" : "soh1b_003",
+  "role" : "ADVERTISER",
+  "state" : "MAIN_MENU",
+  "chatId" : 2140644302,
+  "phoneNumber" : "998943133881",
+  "locationUser" : {
+    "longitude" : 69.228416,
+    "latitude" : 41.326593
+  },
+  "updateStadiumId" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
+  "updateSlotId" : "907d804b-6952-4c3a-8fe8-1f58952b1dc4"
+} ]

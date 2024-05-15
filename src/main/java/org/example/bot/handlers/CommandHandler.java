@@ -9,9 +9,8 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 
 import java.util.Objects;
 
-import static org.example.bot.MyBot.buttons;
-import static org.example.bot.MyBot.userService;
-import static org.example.enumators.UserState.*;
+import static org.example.bot.MyBot.*;
+import static org.example.bot.MyBot.advertiserHandler;
 
 @Slf4j
 public class CommandHandler {
@@ -21,11 +20,10 @@ public class CommandHandler {
         Long chatId = message.getChatId();
 
         if(Objects.equals(text, "/start")) {
-            return handleStart(chatId, message.getFrom());
+            return handleStart(message, message.getFrom());
         }
 
         User currentUser = userService.findByChatId(chatId);
-
         switch (currentUser.getState()) {
             case SHARE_CONTACT -> {
                 return registrationHandler.handleContact(message, currentUser);
@@ -33,14 +31,52 @@ public class CommandHandler {
             case SHARE_LOCATION -> {
                 return registrationHandler.handleLocation(message, currentUser);
             }
-            case REGISTERED -> {
+            case UserRole, MAIN_MENU ->{
                 return registrationHandler.chooseUserRole(message, currentUser);
             }
+            //user
+            case ToChoose ->{
+                return userHandler.toChoose(message, currentUser);
+            }
+            case PAYMENT -> {
+                return userHandler.payment(message, currentUser);
+            }
+
+            ///ADvertiser
+            case NameStadium ->{
+                return advertiserHandler.nameStadium(message, currentUser);
+            }
+            case StadiumPage -> {
+                return advertiserHandler.stadiumPage(message, currentUser);
+            }
+            case LocationStadium -> {
+                if(message.hasPhoto()){
+                    return advertiserHandler.stadiumPage(message, currentUser);
+                }
+                    return advertiserHandler.locationStadium(message, currentUser);
+            }
+            case Price -> {
+                return advertiserHandler.priceStadium(message, currentUser);
+            }
+            case LocalDate -> {
+                return advertiserHandler.localDate(message, currentUser);
+            }
+            case FromTo -> {
+                return advertiserHandler.fromTo(message, currentUser);
+            }
+            case YesAndNo -> {
+                return advertiserHandler.yesAndNo(message, currentUser);
+            }
+            case PlusTime -> {
+                return advertiserHandler.plusTime(message, currentUser);
+            }
         }
-        return new SendMessage(chatId.toString(), "Wrong command or something went wrong");
+        return new SendMessage(message.getChatId().toString(), "Xato Xabar!!!");
     }
 
-    private SendMessage handleStart(Long chatId, org.telegram.telegrambots.meta.api.objects.User from) {
+
+    public SendMessage handleStart(Message message, org.telegram.telegrambots.meta.api.objects.User from) {
+        Long chatId = message.getChatId();
         User user = null;
         try{
             user = userService.findByChatId(chatId);
@@ -49,7 +85,13 @@ public class CommandHandler {
             user.setState(UserState.MAIN_MENU);
             SendMessage sendMessage = new SendMessage(chatId.toString(),
                     String.format("Welcome back %s, choose currency", user.getFirstName()));
-//            sendMessage.setReplyMarkup(buttons.getUserRole());
+//            if(Objects.equals(user.getRole(), org.example.enumators.UserRole.USER)){
+//                userMenu(message, user);
+//            }
+//
+//            if(Objects.equals(user.getRole(), org.example.enumators.UserRole.ADVERTISER)){
+//                advertiserMenu(message, user);
+//
             return sendMessage;
         }
         catch (DataNotFoundException e){

@@ -120,4 +120,17 @@ public class Buttons {
         replyKeyboardMarkup.setResizeKeyboard(true);
         return replyKeyboardMarkup;
     }
+
+    public ReplyKeyboard menuAdvertiser() {
+        List<KeyboardRow> keyboardRows = new ArrayList<>();
+        KeyboardRow row1 = new KeyboardRow();
+        row1.add("E'lonlarim");
+        row1.add("E'lon Quwiw");
+
+        keyboardRows.add(row1);
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup(keyboardRows);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        return replyKeyboardMarkup;
+    }
 }

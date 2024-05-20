@@ -26,6 +26,7 @@ public enum UserState {
 
     // Advertiser
     MenuAdvertiser,
+    ExselOrder,
     NameStadium,
     StadiumPage,
     YesAndNoStadiumPage,

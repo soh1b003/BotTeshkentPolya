@@ -175,4 +175,41 @@ public class AdvertiserHandler {
         }
         return new SendMessage(message.getChatId().toString(), "NOTUGRI BUYRUQ❌");
     }
+
+    public SendMessage menuAdvertiser(Message message, User currentUser) {
+        if(message.getText().equals("E'lonLarim")){
+            currentUser.setState(UserState.ExselOrder);
+            userService.update(currentUser);
+            ArrayList<Stadium> stadiums = stadiumService.getAllUser(currentUser.getId());
+            String str = "";
+            for (Stadium stadium : stadiums) {
+                str = str + stadium.getNameStadium() + " 1 Soatga -> " + stadium.getStadiumPage() + "\n";
+            }
+
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), str + "\n" + "Stadion foyfalanuvchilari RUYXATI kerakmi ??");
+            sendMessage.setReplyMarkup(buttons.getYesAndNo());
+            return sendMessage;
+        }
+
+        if(message.getText().equals("E'lon Quwiw")){
+            currentUser.setState(UserState.NameStadium);
+            userService.update(currentUser);
+            return new SendMessage(message.getChatId().toString(), "STADION nomini kiriting");
+        }
+        return new SendMessage(message.getChatId().toString(), "Notug'ri buruq❌");
+    }
+
+    public SendMessage exselOrder(Message message, User currentUser) {
+        if(message.getText().equals("YES")){
+
+        }
+        if(message.getText().equals("NO")){
+            currentUser.setState(UserState.UserRole);
+            userService.update(currentUser);
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "NIMA QILMOQCHISIZ ? 🧐");
+            sendMessage.setReplyMarkup(buttons.getUserRole());
+            return sendMessage;
+        }
+        return new SendMessage(message.getChatId().toString(), "Notug'ri buruq❌");
+    }
 }

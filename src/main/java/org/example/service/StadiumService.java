@@ -6,6 +6,7 @@ import org.example.repository.StadiumRepository;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class StadiumService extends BaseService<Stadium, StadiumRepository> {
     public StadiumService(StadiumRepository repository) {
@@ -27,5 +28,9 @@ public class StadiumService extends BaseService<Stadium, StadiumRepository> {
 
     public Stadium findByStadiumId(UUID stadiumId){
         return getAll().stream().filter((stadium) -> Objects.equals(stadium.getId(), stadiumId)).findFirst().get();
+    }
+
+    public ArrayList<Stadium> getAllUser(UUID id) {
+       return (ArrayList<Stadium>) getAll().stream().filter(stadium -> Objects.equals(stadium.getUserId(), id)).collect(Collectors.toList());
     }
 }

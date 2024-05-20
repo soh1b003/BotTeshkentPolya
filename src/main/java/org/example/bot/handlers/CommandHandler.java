@@ -84,6 +84,12 @@ public class CommandHandler extends MyBot {
 
 
             ///ADvertiser
+            case MenuAdvertiser -> {
+                return advertiserHandler.menuAdvertiser(message, currentUser);
+            }
+            case ExselOrder -> {
+                return advertiserHandler.exselOrder(message, currentUser);
+            }
             case NameStadium ->{
                 return advertiserHandler.nameStadium(message, currentUser);
             }

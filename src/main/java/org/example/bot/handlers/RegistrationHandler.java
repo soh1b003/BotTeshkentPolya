@@ -69,13 +69,13 @@ public class RegistrationHandler {
             return sendMessage;
         }
 
-        if(Objects.equals(message.getText(), "E'lon quwiw")){
-            currentUser.setState(UserState.NameStadium);
+        if(Objects.equals(message.getText(), "E'lonLarim")){
+            currentUser.setState(UserState.MenuAdvertiser);
             currentUser.setRole(UserRole.ADVERTISER);
             userService.update(currentUser);
-            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "Stadion nomini kiriting :");
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "Menu :");
             ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
-            sendMessage.setReplyMarkup(remove);
+            sendMessage.setReplyMarkup(buttons.menuAdvertiser());
             return sendMessage;
         }
 

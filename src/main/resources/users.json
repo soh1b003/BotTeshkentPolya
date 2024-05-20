@@ -1,18 +1,172 @@
 [ {
-  "id" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
-  "createdDate" : "15/05/2024 14:49:57",
+  "id" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "createdDate" : "20/05/2024 11:53:49",
   "isActive" : true,
   "firstName" : "soh1b_003",
   "lastName" : null,
   "username" : "soh1b_003",
   "role" : "ADVERTISER",
   "state" : "MAIN_MENU",
-  "chatId" : 2140644302,
-  "phoneNumber" : "998943133881",
+  "chatId" : 5645454,
+  "phoneNumber" : "+998943133881",
   "locationUser" : {
-    "longitude" : 69.228416,
-    "latitude" : 41.326593
+    "longitude" : 69.229251,
+    "latitude" : 41.357496
   },
-  "updateStadiumId" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
-  "updateSlotId" : "907d804b-6952-4c3a-8fe8-1f58952b1dc4"
+  "updateStadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "updateSlotId" : "6b07c277-56e9-45f4-baa2-3f186bdf1777",
+  "date" : null,
+  "fromTo" : null
+}, {
+  "id" : "2bb604fd-8583-4e99-b079-b6ac8d31d323",
+  "createdDate" : "20/05/2024 14:14:00",
+  "isActive" : true,
+  "firstName" : "soh1b_003",
+  "lastName" : null,
+  "username" : "soh1b_003",
+  "role" : "USER",
+  "state" : "EnterTimeCallBack",
+  "chatId" : 6545454,
+  "phoneNumber" : "+998943133881",
+  "locationUser" : {
+    "longitude" : 69.229251,
+    "latitude" : 41.357496
+  },
+  "updateStadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "updateSlotId" : null,
+  "date" : "23/05/2024",
+  "fromTo" : "19:00 vs 20:00"
+}, {
+  "id" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "createdDate" : "20/05/2024 15:06:10",
+  "isActive" : true,
+  "firstName" : "soh1b_003",
+  "lastName" : null,
+  "username" : "soh1b_003",
+  "role" : "ADVERTISER",
+  "state" : "MAIN_MENU",
+  "chatId" : 1661681,
+  "phoneNumber" : "+998943133881",
+  "locationUser" : {
+    "longitude" : 69.231888,
+    "latitude" : 41.335005
+  },
+  "updateStadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "updateSlotId" : "8ffebdc7-0743-4ca4-be12-8db66a2941a2",
+  "date" : null,
+  "fromTo" : null
+}, {
+  "id" : "1fa9703e-8073-437c-a7bb-9977d679968f",
+  "createdDate" : "20/05/2024 15:09:07",
+  "isActive" : true,
+  "firstName" : "soh1b_003",
+  "lastName" : null,
+  "username" : "soh1b_003",
+  "role" : "USER",
+  "state" : "EnterTimeCallBack",
+  "chatId" : 564564545,
+  "phoneNumber" : "+998943133881",
+  "locationUser" : {
+    "longitude" : 69.229251,
+    "latitude" : 41.357496
+  },
+  "updateStadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "updateSlotId" : null,
+  "date" : "20/05/2024",
+  "fromTo" : "20:00 vs 21:00"
+}, {
+  "id" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "createdDate" : "20/05/2024 16:13:39",
+  "isActive" : true,
+  "firstName" : "soh1b_003",
+  "lastName" : null,
+  "username" : "soh1b_003",
+  "role" : "USER",
+  "state" : "OlishOlmaslik",
+  "chatId" : 2140644302,
+  "phoneNumber" : "+998943133881",
+  "locationUser" : {
+    "longitude" : 69.229251,
+    "latitude" : 41.357496
+  },
+  "updateStadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "updateSlotId" : "7b826c77-57fc-45d0-95a7-f77a1f1fa256",
+  "date" : "21/05/2024",
+  "fromTo" : "22:00 vs 23:00"
+}, {
+  "id" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "createdDate" : "20/05/2024 16:21:38",
+  "isActive" : true,
+  "firstName" : "Jamshid",
+  "lastName" : null,
+  "username" : "jamshid_elmurodov",
+  "role" : "USER",
+  "state" : "EnterTime",
+  "chatId" : 1870689122,
+  "phoneNumber" : "998997435678",
+  "locationUser" : {
+    "longitude" : 69.228514,
+    "latitude" : 41.326718
+  },
+  "updateStadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "updateSlotId" : "666002f7-847e-4465-96f5-a0b38864e029",
+  "date" : "20/05/2024",
+  "fromTo" : "17:00 vs 18:00"
+}, {
+  "id" : "f8efc952-467b-4489-9d20-c51345dee724",
+  "createdDate" : "20/05/2024 16:24:37",
+  "isActive" : true,
+  "firstName" : "Aziz",
+  "lastName" : null,
+  "username" : null,
+  "role" : "USER",
+  "state" : "MAIN_MENU",
+  "chatId" : 1745441423,
+  "phoneNumber" : "+998993544554",
+  "locationUser" : {
+    "longitude" : 69.228143,
+    "latitude" : 41.326685
+  },
+  "updateStadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "updateSlotId" : null,
+  "date" : "23/05/2024",
+  "fromTo" : "21:00 vs 22:00"
+}, {
+  "id" : "673abf64-1880-4ab6-abbf-6e0be412939d",
+  "createdDate" : "20/05/2024 16:27:15",
+  "isActive" : true,
+  "firstName" : "FARKHODOFF",
+  "lastName" : null,
+  "username" : "behzodfarkhodov",
+  "role" : "USER",
+  "state" : "MAIN_MENU",
+  "chatId" : 1330696129,
+  "phoneNumber" : "+17077228686",
+  "locationUser" : {
+    "longitude" : 69.228143,
+    "latitude" : 41.326685
+  },
+  "updateStadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "updateSlotId" : null,
+  "date" : "20/05/2024",
+  "fromTo" : "21:00 vs 22:00"
+}, {
+  "id" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "createdDate" : "20/05/2024 17:16:20",
+  "isActive" : true,
+  "firstName" : "Jamshidbek Karimov",
+  "lastName" : null,
+  "username" : "Jamshidbekarimovuz",
+  "role" : "USER",
+  "state" : "MAIN_MENU",
+  "chatId" : 5180427425,
+  "phoneNumber" : "+998940748463",
+  "locationUser" : {
+    "longitude" : 69.228561,
+    "latitude" : 41.326561
+  },
+  "updateStadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "updateSlotId" : "d1e31a7b-8719-4bf7-b288-ad4709e87788",
+  "date" : "20/05/2024",
+  "fromTo" : "17:00 vs 18:00"
 } ]

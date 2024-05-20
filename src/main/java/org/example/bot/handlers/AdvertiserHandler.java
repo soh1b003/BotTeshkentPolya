@@ -33,7 +33,7 @@ public class AdvertiserHandler {
     @SneakyThrows
     public SendMessage stadiumPage(Message message, User currentUser) {
         if(message.hasPhoto()){
-            currentUser.setState(UserState.LocationStadium);
+            currentUser.setState(UserState.YesAndNoStadiumPage);
             Stadium oldStadium = stadiumService.findByStadiumId(currentUser.getUpdateStadiumId());
 
             List<PhotoSize> photoSizes = message.getPhoto();
@@ -45,8 +45,8 @@ public class AdvertiserHandler {
             oldStadium.setStadiumPage(photos);
             stadiumService.update(oldStadium);
             userService.update(currentUser);
-            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "Stadion location  ");
-            sendMessage.setReplyMarkup(buttons.requestLocation());
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "YANA RASM YUBORASZMI  ");
+            sendMessage.setReplyMarkup(buttons.getYesAndNo());
             return sendMessage;
         }
         return new SendMessage(message.getChatId().toString(), "Rasmlarni YUBOR DEYILDIKUU :");
@@ -70,13 +70,19 @@ public class AdvertiserHandler {
     }
 
     public SendMessage priceStadium(Message message, User currentUser){
-        currentUser.setState(UserState.LocalDate);
+        currentUser.setState(UserState.FromTo);
         userService.update(currentUser);
         Stadium byStadiumId = stadiumService.findByStadiumId(currentUser.getUpdateStadiumId());
         byStadiumId.setPrice(message.getText());
         stadiumService.update(byStadiumId);
-        SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "Sanani tanla ");
-        sendMessage.setReplyMarkup(dateButtons.getWeek());
+        Slot add = slotService.add(new Slot(currentUser.getId(),
+                currentUser.getUpdateStadiumId(), LocalDate.now(),
+                null, StadiumState.NotBooked));
+        currentUser.setUpdateSlotId(add.getId());
+        userService.update(currentUser);
+        SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "QAYSI VAQTLAR ORALIGIDA🧐 ");
+        ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
+        sendMessage.setReplyMarkup(timeButtons.getTimes());
         return sendMessage;
     }
 
@@ -103,8 +109,11 @@ public class AdvertiserHandler {
         Slot bySlotId = slotService.findBySlotId(currentUser.getUpdateSlotId());
         bySlotId.setFromTo(message.getText());
         bySlotId.setState(StadiumState.NotBooked);
+        for (int i = 1; i < 8; i++) {
+            slotService.add(new Slot(currentUser.getId(), bySlotId.getStadiumId(),LocalDate.now().plusDays(i), message.getText(), StadiumState.NotBooked ));
+        }
         slotService.update(bySlotId);
-        SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "Yana Vaqt kiritasizmi ");
+        SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "YANA VAQT KIRITASIZMI🖐 ");
         sendMessage.setReplyMarkup(buttons.getYesAndNo());
         return sendMessage;
     }
@@ -115,7 +124,10 @@ public class AdvertiserHandler {
         if(message.getText().equals("NO")){
             currentUser.setState(UserState.MAIN_MENU);
             userService.update(currentUser);
-            return new SendMessage(message.getChatId().toString(), "E'LON QUYGANINGIZ UCHUN RAHMAT👌 ");
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "E'LON QUYGANINGIZ UCHUN RAHMAT👌 ");
+            ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
+            sendMessage.setReplyMarkup(remove);
+            return sendMessage;
         }
         if(message.getText().equals("YES")){
             currentUser.setState(UserState.PlusTime);
@@ -129,15 +141,38 @@ public class AdvertiserHandler {
     }
 
     public SendMessage plusTime(Message message, User currentUser){
-        currentUser.setState(UserState.MAIN_MENU);
+        currentUser.setState(UserState.YesAndNo);
         userService.update(currentUser);
 
         Slot bySlotId = slotService.findBySlotId(currentUser.getUpdateSlotId());
-        slotService.add(new Slot(currentUser.getId(), bySlotId.getStadiumId(), bySlotId.getDate()
-                , message.getText(), StadiumState.NotBooked ));
-        SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "E'LON QUYGANINGIZ UCHUN RAHMAT👌 ");
+        for (int i = 0; i < 8; i++) {
+            slotService.add(new Slot(currentUser.getId(), bySlotId.getStadiumId(), LocalDate.now().plusDays(i)
+                    , message.getText(), StadiumState.NotBooked ));
+        }
+
+        SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "YANA VAQT KIRITASIZMI🖐 ");
         ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
-        sendMessage.setReplyMarkup(remove);
+        sendMessage.setReplyMarkup(buttons.getYesAndNo());
         return sendMessage;
+    }
+
+    public SendMessage yesAndNoStadiumPage(Message message, User currentUser) {
+        if(message.getText().equals("NO")){
+            currentUser.setState(UserState.LocationStadium);
+            userService.update(currentUser);
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "STADIUM Location ");
+            ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
+            sendMessage.setReplyMarkup(buttons.requestLocation());
+            return sendMessage;
+        }
+        if(message.getText().equals("YES")){
+            currentUser.setState(UserState.StadiumPage);
+            userService.update(currentUser);
+            SendMessage sendMessage =  new SendMessage(message.getChatId().toString(), "Stadion rasmlarinini yuboring :");
+            ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
+            sendMessage.setReplyMarkup(remove);
+            return sendMessage;
+        }
+        return new SendMessage(message.getChatId().toString(), "NOTUGRI BUYRUQ❌");
     }
 }

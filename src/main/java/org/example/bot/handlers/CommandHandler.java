@@ -1,11 +1,18 @@
 package org.example.bot.handlers;
 
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
+import org.example.bot.MyBot;
 import org.example.enumators.UserState;
 import org.example.exception.DataNotFoundException;
 import org.example.model.User;
+import org.telegram.telegrambots.meta.api.methods.send.SendMediaGroup;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
+import org.telegram.telegrambots.meta.api.objects.MaybeInaccessibleMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardRemove;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.Objects;
 
@@ -13,9 +20,9 @@ import static org.example.bot.MyBot.*;
 import static org.example.bot.MyBot.advertiserHandler;
 
 @Slf4j
-public class CommandHandler {
+public class CommandHandler extends MyBot {
     public static RegistrationHandler registrationHandler = new RegistrationHandler();
-    public SendMessage handle(Message message) {
+    public SendMessage handle(Message message) throws TelegramApiException {
         String text = message.getText();
         Long chatId = message.getChatId();
 
@@ -34,13 +41,47 @@ public class CommandHandler {
             case UserRole, MAIN_MENU ->{
                 return registrationHandler.chooseUserRole(message, currentUser);
             }
+
+
             //user
-            case ToChoose ->{
-                return userHandler.toChoose(message, currentUser);
+            case LocationAndDate -> {
+                return userHandler.locationAndDate(message, currentUser);
+            }
+            //Time
+            case EnterDate -> {
+                return userHandler.enterDate(message, currentUser);
+            }
+            case EnterTime ->{
+                 return userHandler.enterTime(message, currentUser);
+            }
+
+            case OlishOlmaslik -> {
+                return userHandler.oliwOlmaslik(message, currentUser);
             }
             case PAYMENT -> {
                 return userHandler.payment(message, currentUser);
             }
+            // LocationOrPolya
+            case SHARE_LOCATION_POLYA -> {
+                SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "Qidirilmoqda");
+                ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
+                sendMessage.setReplyMarkup(remove);
+                execute(sendMessage);
+                return userHandler.shareLocationPolya(message, currentUser);
+            }
+            case EnterYesAndNoCallBack -> {
+                return userHandler.enterYesAndNoCallBack(message, currentUser);
+            }
+            case EnterDateCallBack -> {
+                return userHandler.enterDateCallBack(message, currentUser);
+            }
+            case EnterTimeCallBack -> {
+                return userHandler.enterTimeCallBack(message, currentUser);
+            }
+
+
+
+
 
             ///ADvertiser
             case NameStadium ->{
@@ -48,6 +89,9 @@ public class CommandHandler {
             }
             case StadiumPage -> {
                 return advertiserHandler.stadiumPage(message, currentUser);
+            }
+            case YesAndNoStadiumPage -> {
+                return advertiserHandler.yesAndNoStadiumPage(message, currentUser);
             }
             case LocationStadium -> {
                 if(message.hasPhoto()){
@@ -71,7 +115,7 @@ public class CommandHandler {
                 return advertiserHandler.plusTime(message, currentUser);
             }
         }
-        return new SendMessage(message.getChatId().toString(), "Xato Xabar!!!");
+        return new SendMessage(message.getChatId().toString(), "NIMASAN SAN❌❌❌");
     }
 
 
@@ -84,14 +128,8 @@ public class CommandHandler {
             userService.update(user);
             user.setState(UserState.MAIN_MENU);
             SendMessage sendMessage = new SendMessage(chatId.toString(),
-                    String.format("Welcome back %s, choose currency", user.getFirstName()));
-//            if(Objects.equals(user.getRole(), org.example.enumators.UserRole.USER)){
-//                userMenu(message, user);
-//            }
-//
-//            if(Objects.equals(user.getRole(), org.example.enumators.UserRole.ADVERTISER)){
-//                advertiserMenu(message, user);
-//
+                    String.format("Welcome back %s, choose currency \n\n\n NIMA QILMOQCHISIZ ? 🧐", user.getFirstName()));
+            sendMessage.setReplyMarkup(buttons.getUserRole());
             return sendMessage;
         }
         catch (DataNotFoundException e){
@@ -109,4 +147,29 @@ public class CommandHandler {
         sendMessage.setReplyMarkup(buttons.requestContact());
         return sendMessage;
         }
+
+
+    public SendMessage callbackHandle(CallbackQuery callbackQuery) throws TelegramApiException {
+        MaybeInaccessibleMessage message = callbackQuery.getMessage();
+        User currentUser = userService.findByChatId(message.getChatId());
+        switch (currentUser.getState()){
+            case SendStadiumPageCallBack -> {
+                String data = callbackQuery.getData();
+                execute(userHandler.callBackStadiumPage(data, currentUser));
+                execute(userHandler.callBackStadiumLocation(data, currentUser));
+                currentUser.setState(UserState.EnterYesAndNoCallBack);
+                userService.update(currentUser);
+                SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "BRON QILASIZMI? 🧐 ");
+                sendMessage.setReplyMarkup(buttons.getYesAndNo());
+                return sendMessage;
+            }
+            case ToChooseStadium -> {
+                String data = callbackQuery.getData();
+                execute(userHandler.toChooseStadium(data, currentUser));
+                execute(userHandler.sendLocation(data, currentUser));
+                return new SendMessage(message.getChatId().toString(), "BRON QILASIZMI");
+            }
+        }
+        return new SendMessage(message.getChatId().toString(), "Notugri buyruq!");
     }
+}

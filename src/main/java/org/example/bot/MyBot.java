@@ -1,11 +1,10 @@
 package org.example.bot;
 
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.example.bot.buttons.*;
-import org.example.bot.handlers.AdvertiserHandler;
-import org.example.bot.handlers.CommandHandler;
-import org.example.bot.handlers.RegistrationHandler;
-import org.example.bot.handlers.UserHandler;
+import org.example.bot.handlers.*;
+import org.example.enumators.UserState;
 import org.example.repository.SlotRepository;
 import org.example.repository.StadiumRepository;
 import org.example.repository.UserRepository;
@@ -13,6 +12,7 @@ import org.example.service.SlotService;
 import org.example.service.StadiumService;
 import org.example.service.UserService;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.api.methods.send.SendMediaGroup;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.MaybeInaccessibleMessage;
@@ -21,6 +21,11 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @Slf4j
 public class MyBot extends TelegramLongPollingBot {
+    public MyBot() {
+        super("7193951173:AAG9LKGMDR5R_NFPka0WsM75CjANNoQtQOw");
+    }
+    public static Distance distance = new Distance();
+    public static InlineButton inlineButton = new InlineButton();
     public static SlotService slotService = new SlotService(new SlotRepository());
     public static StadiumService stadiumService = new StadiumService(new StadiumRepository());
     public static UserService userService = new UserService(new UserRepository());
@@ -36,10 +41,16 @@ public class MyBot extends TelegramLongPollingBot {
         super(botToken);
     }
 
+    @SneakyThrows
     @Override
     public void onUpdateReceived(Update update) {
-        SendMessage sendMessage = commandHandler.handle(update.getMessage());
-        send(sendMessage);
+        if (update.hasMessage()) {
+            SendMessage sendMessage = commandHandler.handle(update.getMessage());
+            send(sendMessage);
+        } else if (update.hasCallbackQuery()) {
+            SendMessage sendMessage = commandHandler.callbackHandle(update.getCallbackQuery());
+            send(sendMessage);
+        }
     }
 
     private void send(SendMessage sendMessage) {
@@ -49,6 +60,16 @@ public class MyBot extends TelegramLongPollingBot {
             throw new RuntimeException(e);
         }
     }
+
+    private void sendMedia(SendMediaGroup sendMediaGroup) {
+        try {
+            execute(sendMediaGroup);
+        } catch (TelegramApiException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
     @Override
     public String getBotUsername() {

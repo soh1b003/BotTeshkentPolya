@@ -8,17 +8,27 @@ public enum UserState {
 
 
     //User
-    ToChoose,
-    PAYMENT,
+    LocationAndDate,
+    Stadium_Selection,
+    SendStadiumPageCallBack,
+    EnterYesAndNoCallBack,
+    EnterDateCallBack,
+    EnterTimeCallBack,
 
+    //time
+    EnterDate, EnterTime,  ToChooseStadium,  SendLocation,  MalumotBerish,  OlishOlmaslik,  PAYMENT,
+    //Location
+    SHARE_LOCATION_POLYA,
 
 
 
 
 
     // Advertiser
+    MenuAdvertiser,
     NameStadium,
     StadiumPage,
+    YesAndNoStadiumPage,
     LocationStadium,
     Price,
     LocalDate,

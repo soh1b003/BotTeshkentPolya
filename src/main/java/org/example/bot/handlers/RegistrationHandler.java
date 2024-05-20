@@ -17,6 +17,7 @@ import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.Base64;
 import java.util.Currency;
+import java.util.List;
 import java.util.Objects;
 
 import static org.example.bot.MyBot.*;
@@ -46,7 +47,7 @@ public class RegistrationHandler {
             currentUser.setLocationUser(location);
             currentUser.setState(UserState.UserRole);
             userService.update(currentUser);
-            SendMessage sendMessage = new SendMessage(chatId.toString(), "NIMA QILMOQCHISIZ ??");
+            SendMessage sendMessage = new SendMessage(chatId.toString(), "NIMA QILMOQCHISIZ ? 🧐");
             sendMessage.setReplyMarkup(buttons.getUserRole());
             return sendMessage;
         }
@@ -58,13 +59,17 @@ public class RegistrationHandler {
 
     public SendMessage chooseUserRole(Message message, User currentUser){
         if(Objects.equals(message.getText(), "E'lonlarni kuriw")){
-            currentUser.setState(UserState.ToChoose);
+            currentUser.setState(UserState.LocationAndDate);
             currentUser.setRole(UserRole.USER);
             userService.update(currentUser);
-            
+
+            SendMessage sendMessage = new SendMessage(message.getChatId().toString(), "QAYSI TARTIBDA QIDIRMOQCHISIZ? 🧐 ");
+            ReplyKeyboardRemove remove = new ReplyKeyboardRemove(true);
+            sendMessage.setReplyMarkup(buttons.getLocationAndDate());
+            return sendMessage;
         }
 
-        if(Objects.equals(message.getText(), "E'lon quyiw")){
+        if(Objects.equals(message.getText(), "E'lon quwiw")){
             currentUser.setState(UserState.NameStadium);
             currentUser.setRole(UserRole.ADVERTISER);
             userService.update(currentUser);

@@ -1,19 +1,1072 @@
 [ {
-  "id" : "907d804b-6952-4c3a-8fe8-1f58952b1dc4",
-  "createdDate" : "15/05/2024 14:50:40",
+  "id" : "6b07c277-56e9-45f4-baa2-3f186bdf1777",
+  "createdDate" : "20/05/2024 11:54:43",
   "isActive" : true,
-  "userId" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
-  "stadiumId" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
-  "date" : "15/05/2024",
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "20/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "Booked"
+}, {
+  "id" : "aeb66eda-8044-4ddd-9f4d-6b89da82c51f",
+  "createdDate" : "20/05/2024 11:54:45",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "21/05/2024",
   "fromTo" : "17:00 vs 18:00",
   "state" : "NotBooked"
 }, {
-  "id" : "4013e41c-a812-4f47-bf14-942f2d76862c",
-  "createdDate" : "15/05/2024 14:50:48",
+  "id" : "86180a52-d725-47fe-a19c-2b282422e5b1",
+  "createdDate" : "20/05/2024 11:54:45",
   "isActive" : true,
-  "userId" : "9d76a003-da65-4680-aa4f-b0b04e726e1f",
-  "stadiumId" : "d181ca90-7f28-4775-ae58-0ea6c9ff54fb",
-  "date" : "15/05/2024",
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "22/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "900d0b54-3a71-406d-b79d-576fd3f25083",
+  "createdDate" : "20/05/2024 11:54:45",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "23/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "Booked"
+}, {
+  "id" : "2ad7a31f-e2f7-4dca-9661-4e8a723b3a32",
+  "createdDate" : "20/05/2024 11:54:45",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "24/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e6f55168-580b-43cb-bbcd-7667dee7fc25",
+  "createdDate" : "20/05/2024 11:54:45",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "25/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "0ea481ce-b372-4073-8d15-c86c877eba44",
+  "createdDate" : "20/05/2024 11:54:45",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "26/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "7256b4c0-6c0d-4200-abde-ed43594ad3e8",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "20/05/2024",
   "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "5c21e9ef-b7c5-4261-9303-8d93ad960f5b",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "21/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "7f7e975c-4377-405d-ae64-2767a5228179",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "22/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "574524b1-c8fa-4bab-a2f2-9ef4f3d4cf7e",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "23/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e5edf398-e3f5-4910-8d2d-32f9f0ffed04",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "24/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "588f193e-87fc-4c01-a364-6c237f6e69f9",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "25/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "585ff83a-dd3b-49c4-ba1a-348b6ca9273c",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "26/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "24ef890c-6732-4add-ae9c-afbdc3adddca",
+  "createdDate" : "20/05/2024 11:54:49",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "27/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "3a8f4c6a-d468-49fe-ab4e-10fbb5004180",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "20/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "574d13bc-c9f1-439d-b217-7f21c93d7101",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "21/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "a8e36ac7-818c-44fe-b7db-bb6664a0ae25",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "22/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "925e3ece-7229-45a2-9c54-968a935165c5",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "23/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "Booked"
+}, {
+  "id" : "2e34de23-7895-4557-8203-b888fb0c0868",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "24/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "0b51fa67-e1fe-407b-ac42-e0d1adc27949",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "25/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "7fb1ad59-fe85-46c5-8400-6177411a2cf9",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "26/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "4607c490-f483-4ffc-84a3-bf364b09a51b",
+  "createdDate" : "20/05/2024 11:54:52",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "27/05/2024",
+  "fromTo" : "19:00 vs 20:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "1cf87a25-5cf4-46bf-8fe0-36b936a0cdc5",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "20/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "Booked"
+}, {
+  "id" : "3aa012e2-5479-43ee-9ddd-7cb8c770058a",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "21/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "7b828b45-af1f-4ee8-ba9a-6020c5bbe3d6",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "22/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "b01614b7-0f90-4f0e-964b-afb4656d249f",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "23/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "Booked"
+}, {
+  "id" : "d37ed2f1-3e97-45e6-bf52-347fa3a7812a",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "24/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "34be046e-ce11-4187-ae9b-7584f3a27dc1",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "25/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "21f04235-6771-47ef-9f6c-a9c21f840d6b",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "26/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "a85d69d4-16b9-470f-83bd-8f54492380b0",
+  "createdDate" : "20/05/2024 11:55:01",
+  "isActive" : true,
+  "userId" : "49bf5ffd-8c6a-4bde-b355-917b64ad8434",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "27/05/2024",
+  "fromTo" : "20:00 vs 21:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "8ffebdc7-0743-4ca4-be12-8db66a2941a2",
+  "createdDate" : "20/05/2024 15:08:06",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "20/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "66fad164-f62c-4b8b-93b9-363c6dfca5b9",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "21/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "2caff2b2-f4e6-4b2c-9f61-59b5a1ff2408",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "22/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "403df70e-bb64-4b05-ba8e-1a95134f4272",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "23/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "f9c5c0cd-e37f-4360-84a1-55fa7f8a34a7",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "24/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "00e43f99-0dd8-4550-b7ca-12482f1ecfb2",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "25/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "92570d08-8773-48bc-a47b-f34815bd09da",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "26/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "b344c6dc-8273-4012-8dc2-08485c3ddf61",
+  "createdDate" : "20/05/2024 15:08:10",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "27/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "cabb68b7-cfbe-4f33-85ec-3a185eca3752",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "3348469b-4075-4a58-bf38-529b82d5a6e3",
+  "date" : "20/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "Booked"
+}, {
+  "id" : "49b08802-6475-4870-9131-75e3ada45e45",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "21/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "6560ebfc-c880-4ea4-978e-e6b6b8516e6f",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "22/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "3546a343-3d6d-4085-9749-4a9acd3ca727",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "23/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "Booked"
+}, {
+  "id" : "4f0e7b5c-8e57-4fd7-bdc1-4e630011ef55",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "24/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "a4fba671-a7d7-488f-8fc1-659d39f9f7a4",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "25/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "2234f035-09f0-43ad-8c2d-8ded04943d72",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "26/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "c5fc7f8f-18c5-4138-bde9-868526729da9",
+  "createdDate" : "20/05/2024 15:08:13",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "27/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "7819aaf9-d557-4e55-b59b-3d21077af94f",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "20/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "61adee4c-90a2-43fa-b73e-22380d2d0045",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "21/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "38a431bd-89b9-4d47-bc46-7d47fb9c2248",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "22/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "133a2657-c822-4d92-823a-0e3d588ab8d1",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "23/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "07204019-547c-4c95-a635-20b8289e96c0",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "24/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "318e372c-ebf9-4e0e-a906-077dcfffa72a",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "25/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "531d3a15-09c4-48f7-89ac-ded4845966b5",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "26/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "baccf75e-e74a-4a3a-8f2f-ba56d076504b",
+  "createdDate" : "20/05/2024 15:08:16",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "27/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "4532b629-d23e-456a-9740-da767289262f",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "20/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "2be1572f-c7a9-4195-bc7b-795fa025bdce",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "21/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "0be2ac9d-3b80-4d5e-adec-26a288417263",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "22/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "a4848a2c-b63f-439a-8539-2aadc04f8fec",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "23/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "517c3786-978d-4e2f-b3b0-15889581f543",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "24/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "a3ecfb72-e019-45ca-a298-f2535e4b5254",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "25/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "3338ad52-79a8-433d-ac50-cd030b7ebc3b",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "26/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "5d62f1cf-9ec8-4aec-bf3e-685f61beb80a",
+  "createdDate" : "20/05/2024 15:08:27",
+  "isActive" : true,
+  "userId" : "83114a54-83eb-43ca-ad06-2bc58ae95fa9",
+  "stadiumId" : "25504982-05cd-4c7a-a827-f9a04479ecdc",
+  "date" : "27/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "7b826c77-57fc-45d0-95a7-f77a1f1fa256",
+  "createdDate" : "20/05/2024 16:16:58",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "20/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "2c759b8c-8c6f-4247-a693-640e1d09c397",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "21/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e252f6b1-5933-4b0a-9de8-4f05182bcf55",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "22/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "d7bf5a2b-964c-469a-8b2a-e6fbc11e1ae5",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "23/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "c8d2b136-acf6-4c91-894a-265c427f663c",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "24/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "da609c16-dd57-49b6-a6e1-2321a21a625d",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "25/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "0ff920a6-5048-4687-812b-aa3aa3894792",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "26/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "c45686ce-506d-4c4f-be19-d1de235c4a68",
+  "createdDate" : "20/05/2024 16:17:01",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "27/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "6f89114d-b514-4e8c-9b67-6e4ae0e78374",
+  "createdDate" : "20/05/2024 16:17:04",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "20/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e4c275a4-3af3-40da-9be8-c708d13a9193",
+  "createdDate" : "20/05/2024 16:17:04",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "21/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "beb617d0-7b3e-4a87-a223-fb0460c99f40",
+  "createdDate" : "20/05/2024 16:17:05",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "22/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "03bea7ee-ac96-4fa3-bd42-31965f480d2a",
+  "createdDate" : "20/05/2024 16:17:05",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "23/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "92ecbf45-fc10-40ce-a3ce-a2a862962f3b",
+  "createdDate" : "20/05/2024 16:17:05",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "24/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "f2c94b12-c84b-42f9-9377-568271b52b15",
+  "createdDate" : "20/05/2024 16:17:05",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "25/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "1cb01abd-e71e-4388-9cc4-8f74cf1728c0",
+  "createdDate" : "20/05/2024 16:17:05",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "26/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "d12a6732-da58-4380-a6b6-b2818d18bfbd",
+  "createdDate" : "20/05/2024 16:17:05",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "27/05/2024",
+  "fromTo" : "21:00 vs 22:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "d7f96cff-9deb-4851-8e09-6ce7d23eabcf",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "20/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "913bd7a5-11c2-48a2-8059-3e5665f62aae",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "21/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "0567af3a-ee5d-4c4a-b1a7-33eb24f9b0f0",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "22/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "513293ee-d07e-4f20-81f1-db100eb520e8",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "23/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "31d382ef-e80f-4a2f-9ba5-5fd64243f853",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "24/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "adbd956b-e43b-4b59-a97d-61bf69b4cad1",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "25/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "3efa0ca9-50bf-4d93-9e1d-653298ad28ff",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "26/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "6a8d2eff-59c7-4351-9782-9c5a436a2518",
+  "createdDate" : "20/05/2024 16:17:12",
+  "isActive" : true,
+  "userId" : "7df86124-50ca-4a56-920f-690da7f922e4",
+  "stadiumId" : "dff3a11a-ac19-4c72-8067-18c1ff867051",
+  "date" : "27/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "666002f7-847e-4465-96f5-a0b38864e029",
+  "createdDate" : "20/05/2024 16:23:04",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "20/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e913b7aa-f3a5-4b24-81a1-cc0332174f7d",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "21/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "17d41a0a-620c-459a-9bc3-753930d4d0a5",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "22/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "4d960895-f03d-45b0-b798-b9d109d869d7",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "23/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "4cd53bcb-4ef2-44c2-a861-c8ed7a3ead50",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "24/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "1635d688-d8fa-46ca-bd87-35096e4ed234",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "25/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "33ad7ea8-8eeb-45c0-ba6f-bb4661cae9dd",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "26/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "057b4d45-c610-4e38-b5f6-396a1fb60440",
+  "createdDate" : "20/05/2024 16:23:11",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "27/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "ea027af0-50e6-4dad-9315-308e7d1ab0a7",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "20/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "134ad5ea-44e0-40fb-b31f-96412990f5c7",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "21/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "9ec74607-dcda-406d-9cd2-7ef775697c4f",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "22/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "5e9b780f-b38d-4c1c-a627-62126d49d1a5",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "23/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "42876af8-f6fc-41df-8b55-29f03059be50",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "24/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "412a35ee-7c65-4cfa-9352-5daf6f4b606d",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "25/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "8f2adfe0-e7d9-4f78-b780-f587f45cdf7e",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "26/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "4c39fe8a-9e83-4baf-822d-49fc6a6ffd6f",
+  "createdDate" : "20/05/2024 16:23:16",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "27/05/2024",
+  "fromTo" : "18:00 vs 19:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e5b99380-7d0a-4a70-bed7-bc29038b2e7d",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "20/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "e106ec59-dd87-4515-abc1-a28baab1bf6c",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "21/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "28f005d5-30bc-4ddc-b4c0-c235c2a57e76",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "22/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "bc5c46b1-6fdf-46e2-ad62-9045bd89de7e",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "23/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "16c1f6bf-777a-4379-b520-2a2a840acd19",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "24/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "0737abfb-05e7-4254-a4b1-f2da72505593",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "25/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "77953207-b188-4da1-9692-1f3dc852e88f",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "26/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "25fda220-6c78-473c-b525-d7e9369b066f",
+  "createdDate" : "20/05/2024 16:23:19",
+  "isActive" : true,
+  "userId" : "72e79b83-f9b9-4c09-b5dd-2cc0c8a79505",
+  "stadiumId" : "56c7846a-2745-4043-ab08-3f19f732ee08",
+  "date" : "27/05/2024",
+  "fromTo" : "22:00 vs 23:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "d1e31a7b-8719-4bf7-b288-ad4709e87788",
+  "createdDate" : "20/05/2024 17:17:39",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "20/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "72b6a811-ee05-4023-bf9e-9e2306341a5c",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "21/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "9993e327-9d84-4f09-a33b-95dd36b7de1a",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "22/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "542676d5-de91-4267-bbea-fd0b5c4e96c6",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "23/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "6b2d58ef-10b1-4b1b-a02f-adc71e94a456",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "24/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "67bd4262-4d36-4d4c-b482-0ccddbaf1268",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "25/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "b400c7ae-22d0-4d0b-8807-c634ec927a1b",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "26/05/2024",
+  "fromTo" : "17:00 vs 18:00",
+  "state" : "NotBooked"
+}, {
+  "id" : "30b4c658-2e07-4263-9d20-9b0ce2a9d8e3",
+  "createdDate" : "20/05/2024 17:17:42",
+  "isActive" : true,
+  "userId" : "c4fe84d4-7e77-4b25-a1f9-90e287c2efa4",
+  "stadiumId" : "57ddace6-6c0f-40d9-9ce7-a5c5395c9bc8",
+  "date" : "27/05/2024",
+  "fromTo" : "17:00 vs 18:00",
   "state" : "NotBooked"
 } ]

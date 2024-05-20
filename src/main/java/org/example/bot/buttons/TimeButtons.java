@@ -1,10 +1,15 @@
 package org.example.bot.buttons;
 
+import org.example.enumators.StadiumState;
+import org.example.model.Slot;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
+import java.util.*;
+
+import static org.example.bot.MyBot.slotService;
 
 public class TimeButtons {
     public ReplyKeyboardMarkup getTimes() {
@@ -33,4 +38,53 @@ public class TimeButtons {
         replyKeyboardMarkup.setResizeKeyboard(true);
         return replyKeyboardMarkup;
     }
+
+    public ReplyKeyboardMarkup getTimesUserHandler(LocalDate date) {
+        ArrayList<Slot> slots = slotService.getAll();
+
+        HashSet<String> newSlots = new HashSet<>();
+
+        for (Slot slot : slots) {
+            if(Objects.equals(slot.getDate(), date) && Objects.equals(slot.getState(), StadiumState.NotBooked)){
+                newSlots.add(slot.getFromTo());
+            }
+        }
+        List<KeyboardRow> keyboardRows = new ArrayList<>();
+
+        for (String slot : newSlots) {
+            KeyboardRow row = new KeyboardRow();
+            row.add(slot);
+            keyboardRows.add(row);
+        }
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup(keyboardRows);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        return replyKeyboardMarkup;
+
+    }
+
+    public ReplyKeyboardMarkup getTimesUserCallBack(LocalDate localDate, UUID updateStadiumId) {
+        ArrayList<Slot> slots = slotService.getAll();
+
+        HashSet<String> newSlots = new HashSet<>();
+
+        for (Slot slot : slots) {
+            if(Objects.equals(slot.getDate(), localDate) && Objects.equals(slot.getState(), StadiumState.NotBooked)
+              && Objects.equals(slot.getStadiumId(), updateStadiumId)){
+                newSlots.add(slot.getFromTo());
+            }
+        }
+        List<KeyboardRow> keyboardRows = new ArrayList<>();
+
+        for (String slot : newSlots) {
+            KeyboardRow row = new KeyboardRow();
+            row.add(slot);
+            keyboardRows.add(row);
+        }
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup(keyboardRows);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        return replyKeyboardMarkup;
+    }
+
 }

@@ -11,6 +11,9 @@ import java.util.ArrayList;
 public abstract class BaseService<T extends Base, R extends BaseRepository<T>> {
     protected R repository;
 
+
+
+
     public BaseService(R repository) {
         this.repository = repository;
     }
